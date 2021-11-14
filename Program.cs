@@ -6,6 +6,7 @@ namespace VariablesCS
     {
         static void Main(string[] args)
         {
+            // EXPLORER and ADVENTURE MODE
 
             // practice creating variables
             int numberOfCupsOfCoffee = 0;
@@ -17,7 +18,16 @@ namespace VariablesCS
             Console.Write("\n");
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
-            Console.WriteLine($"Hi {userName}! Welcome to this! ");
+
+            if (userName == "Alice")
+            {
+                Console.WriteLine("Welcome back to Wonderland, Alice. We've missed you. ");
+            }
+            else
+            {
+                Console.WriteLine($"Hi {userName}! Welcome to this! ");
+            }
+
 
             // practice getting different types of input from the user
             Console.Write("\n");
@@ -44,6 +54,7 @@ namespace VariablesCS
             Console.WriteLine("Quotient: " + quotient);
             Console.WriteLine("Remainder: " + remainder);
             Console.WriteLine("\n");
+
 
         }
     }

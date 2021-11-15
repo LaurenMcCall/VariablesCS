@@ -12,14 +12,16 @@ namespace VariablesCS
             int numberOfCupsOfCoffee = 0;
             string fullName = "Lauren McCall";
             var today = DateTime.Now;
-            Console.WriteLine($"{fullName} has drank {numberOfCupsOfCoffee} cups of coffee as of {today}. ");
+            var teaToday = 4;
+            Console.WriteLine("{0} has drank {1} cups of coffee {2:D}. But she has had {3} cups of tea. ", fullName, numberOfCupsOfCoffee, DateTime.Now, teaToday);
 
             // practice getting input from the user
             Console.Write("\n");
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
 
-            if (userName == "Alice")
+            // if (userName == "Alice")
+            if (userName.Equals("Alice", StringComparison.CurrentCultureIgnoreCase))
             {
                 Console.WriteLine("Welcome back to Wonderland, Alice. We've missed you. ");
             }
@@ -27,7 +29,6 @@ namespace VariablesCS
             {
                 Console.WriteLine($"Hi {userName}! Welcome to this! ");
             }
-
 
             // practice getting different types of input from the user
             Console.Write("\n");
